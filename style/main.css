@@ -162,5 +162,14 @@ header{
   font-weight: bold;
   font-size: 18px;
   color: #5e5e5e;
+}
 
+/* sezione dedicata al footer */
+
+footer{
+  background: #ff564a;
+  color: white;
+  text-align: center;
+  width: 300px;
+  margin: 50px auto 0px;
 }
