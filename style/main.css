@@ -94,8 +94,10 @@ header{
 
 }
 
+
 /* box sinistro */
 .box_citta{
+  display: none;
   bottom: 20px;
   position: relative;
   width: 300px;
@@ -115,15 +117,19 @@ header{
   top: 125px;
   right: 50%;
   transform: translateX(50%);
-  color: #f0f0f0;
   font-size: 40px;
   font-weight: bold;
-  opacity: 0
+  opacity: 0;
 }
 
+.box_citta:hover {
+  opacity: .8;
+
+}
 .box_citta:hover .nome_citta {
   opacity: 1;
-
+  color: #ccc;
+  color: white;
 }
 
 /* box destra */
@@ -131,8 +137,30 @@ header{
   bottom: 20px;
   display: inline-block;
   position: relative;
-  background: grey;
+  /* background: grey; */
   width: 600px;
   height: 300px;
+  border: 1px solid grey;
   border-radius: 30px;
+
+}
+
+.scritta{
+  padding: 20px;
+  position: absolute;
+}
+.scritta h2{
+  color: #ff564a;
+  font-size: 40px;
+  position: relative;
+  margin: 0;
+}
+
+.scritta p{
+  padding-top: 20px;
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+  color: #5e5e5e;
+
 }
