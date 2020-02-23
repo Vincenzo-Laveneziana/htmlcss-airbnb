@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Open Sans' ;
+  margin: 0;
+  background: white;
+}
+
+/* Parte dell'header */
+header{
+  position: relative;
+}
+
+#contenitore_header{
+  top: 0 ;
+  background: #e65c5c;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  line-height: 15px;
+  z-index: 1;
+}
+
+.contenitore_img{
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 7px;
+}
+
+.contenitore_img img{
+  vertical-align: middle;
+  display: inline-block;
+  width: 40px;
+  position: relative;
+}
+
+.contenitore_img h1{
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.contenitore_menu{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.contenitore_menu li{
+  display: inline-block;
+  list-style: none;
+}
+
+.contenitore_menu li , a{
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  padding:  10px;
+  border-bottom: 3px solid transparent;
+}
+
+.contenitore_menu li a:hover{
+  border-color: white;
+  padding-bottom: 21px;
+}
+
+.contenitore_img input[type="search"]{
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 15px;
+  border: 1px solid grey;
+}
+
+/* Parte contenente il main */
+#contenitore_main{
+  position: relative;
+  width: 90%;
+  /* height: 3000px; */
+  margin: 150px auto 50px ;
+  text-align: center;
+}
+
+.riga{
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  /* background: grey; */
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.img_citta1{
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  background-image: url("../img/milano.jpg");
+  background-size: cover;
+  border-radius: 40px;
+  border: 3px solid grey;
+  overflow: hidden;
+}
+
+.img_citta2{
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  background-image: url("../img/roma.jpg");
+  background-size: cover;
+  border-radius: 40px;
+  border: 3px solid grey;
+  overflow: hidden;
+}
+
+.img_citta3{
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  background-image: url("../img/firenze.jpg");
+  background-size: cover;
+  border-radius: 40px;
+  border: 3px solid grey;
+  overflow: hidden;
+}
+
+.img_citta1 h2,
+.img_citta2 h2,
+.img_citta3 h2{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.overlay{
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+
+.overlay a {
+  margin: 0;
+  left: 0%;
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  color: white;
+  font-size: 22px;
+  opacity: 0;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 40px;
+}
+
+#contenitore_main a{
+  padding: 15% 3% 3% 3%;
+}
+
+.info_citta:hover {
+  opacity: 1;
+}
+
+/* parte dedicata al footer */
+#contenitore_footer{
+  background: #e65c5c;
+  width: 100%;
+  height: 5%;
+  text-align: center;
+  padding: 10px
+}
+
+#contenitore_footer a{
+  padding: 5px;
+  color: White;
+  font-size: 15px;
+  display: block;
+}
